@@ -1,0 +1,24 @@
+{
+  "protocol": "https://social-media.xyz",
+  "published": true,
+  "types": {
+    "post": {
+      "schema": "https://social-media.xyz/schemas/postSchema",
+      "dataFormats": ["applications/json"]
+    }
+  },
+  "structure": {
+    "post": {
+      "$actions": [
+        {
+          "who": "anyone",
+          "can": "read"
+        },
+        {
+          "who": "anyone",
+          "can": "write"
+        }
+      ]
+    }
+  }
+}
